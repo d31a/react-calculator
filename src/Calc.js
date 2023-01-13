@@ -105,12 +105,8 @@ export default function Calc() {
   return (
     <div className="App">
       <h1>Calculator App</h1>
-      <div className="WrapperCalc">
-        <div className="CalcScreen">
-          {/*This outputs the value to a paragraph*/}
-          <p id="ResultScreen">{currentValue}</p>
-        </div>
-      </div>
+      {/*This outputs the value to a paragraph*/}
+      <p id="ResultScreen">{currentValue}</p>
       <div className="CalcBtns" id="first-row">
         <button value="clear-all" onClick={handleClick}>
           AC
