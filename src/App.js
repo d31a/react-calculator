@@ -1,5 +1,6 @@
-// App to console.log state of a button when clicked.
-// Credit: Ben Bagley 03/01/2022
+// React Calculator App
+// Credit: Ben Bagley
+// Updated: 13/01/2022
 
 import React from "react";
 import "./styles.css";
