@@ -168,7 +168,7 @@ Then the calculation takes place in a series of ternery if/else statmenets. Esse
 
 
 ```
-const computation = // if operation is equal to operation, do the operation of previous value and current value
+const computation =
           operation === "+"
             ? prev + curr
             : operation === "-"
