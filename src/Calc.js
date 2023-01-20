@@ -84,12 +84,12 @@ export default function Calc() {
         break;
 
       // Clearing the results
-      case "clear-all":
+      case "clearAll":
         setCurrentValue("0");
         setPreviousValue(null);
         setOperator(null);
         break;
-      case "clear-entry":
+      case "clearEntry":
         setCurrentValue("0");
         break;
       default:
@@ -106,12 +106,12 @@ export default function Calc() {
     <div className="App">
       <h1>Calculator App</h1>
       {/*This outputs the value to a paragraph*/}
-      <p id="ResultScreen">{currentValue}</p>
-      <div className="CalcBtns" id="first-row">
-        <button value="clear-all" onClick={handleClick}>
+      <p id="resultScreen">{currentValue}</p>
+      <div className="calcBtns" id="firstRow">
+        <button value="clearAll" onClick={handleClick}>
           AC
         </button>
-        <button value="clear-entry" onClick={handleClick}>
+        <button value="clearEntry" onClick={handleClick}>
           CE
         </button>
         <button value="%" onClick={handleClick}>
@@ -121,7 +121,7 @@ export default function Calc() {
           ÷
         </button>
       </div>
-      <div className="CalcBtns">
+      <div className="calcBtns">
         <button value="7" onClick={handleClick}>
           7
         </button>
@@ -135,7 +135,7 @@ export default function Calc() {
           x
         </button>
       </div>
-      <div className="CalcBtns">
+      <div className="calcBtns">
         <button value="4" onClick={handleClick}>
           4
         </button>
@@ -149,7 +149,7 @@ export default function Calc() {
           -
         </button>
       </div>
-      <div className="CalcBtns">
+      <div className="calcBtns">
         <button value="1" onClick={handleClick}>
           1
         </button>
@@ -163,8 +163,8 @@ export default function Calc() {
           +
         </button>
       </div>
-      <div className="CalcBtns">
-        <button id="big-zero" value="0" onClick={handleClick}>
+      <div className="calcBtns">
+        <button id="bigZero" value="0" onClick={handleClick}>
           0
         </button>
         <button value="." onClick={handleClick}>
