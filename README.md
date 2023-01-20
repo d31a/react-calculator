@@ -93,7 +93,7 @@ export default function Calc() {
 
 Here, the `setCurrentValue` is updated with the value of the button pressed is `"0"` - `"9"`. Using an ES6 ternery operator, if the value set in the `currentValue` variable is strictly equal to "0", then the value of `getSameValue` will take that value and add no more to it. Else, if the value is any number 1-9, it will take the `currentValue` and add it on to `getSameValue`. 
 
-In other words, if the value pressed is `9` while the current value is  `0`, then the output will be simply `9`. But if the value of the current value is `1`, and another number is inputted, such as `9`, then the output will be the numbers concatenated, e.g. `19`. This allows unlimited amont of numbers to output.
+In other words, if the value pressed is `9` while the current value is  `0`, then the output will be simply `9`. But if the value of the current value is `1`, and another number is inputted, such as `9`, then the output will be the numbers concatenated, e.g. `19`. 
 
 #### Operators 
 
