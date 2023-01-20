@@ -1,5 +1,5 @@
 # Calculator App ReadMe | React
-[toc]
+{:toc}
 
 This is an improvement of the Meta React Basics course calculator created as a final project: https://github.com/d31a/meta-react-fp-calculator
 
@@ -326,3 +326,4 @@ Finally, some CSS was added to make the calculator visually appealing. In partic
 
 ![calc-app-react.gif](calc-app-react.gif)
 
+View on CodeSandBox: https://codesandbox.io/s/github/d31a/react-calculator
