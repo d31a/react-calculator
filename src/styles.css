@@ -32,7 +32,7 @@ p {
 
 /* Styling the buttons */
 
-.CalcBtns {
+.calcBtns {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,17 +68,17 @@ button:nth-last-child(1) {
 
 /* first row only */
 
-#first-row {
+#firstRow {
   margin-top: 20px;
 }
 
-#first-row button {
+#firstRow button {
   background-color: darkcyan;
   color: white;
 }
 
-#first-row button:nth-child(2),
-#first-row button:nth-child(1) {
+#firstRow button:nth-child(2),
+#firstRow button:nth-child(1) {
   background-color: rgb(51, 77, 77);
   color: white;
   border: 0px solid;
@@ -86,7 +86,7 @@ button:nth-last-child(1) {
 
 /* bigger 0 button to make up for space */
 
-#big-zero {
+#bigZero {
   width: 110px;
   height: 50px;
   margin-right: 10px;
@@ -98,14 +98,14 @@ button:nth-last-child(1) {
   cursor: pointer;
 }
 
-#big-zero:hover {
+#bigZero:hover {
   width: 115px;
   height: 47px;
 }
 
 /* Screen */
 
-#ResultScreen {
+#resultScreen {
   background-color: rgb(9, 73, 82);
   width: 60%;
   min-height: 40px;
