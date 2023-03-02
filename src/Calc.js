@@ -104,7 +104,6 @@ export default function Calc() {
 
   return (
     <div className="App">
-      <h1>Calculator App</h1>
       {/*This outputs the value to a paragraph*/}
       <p id="resultScreen">{currentValue}</p>
       <div className="calcBtns" id="firstRow">
