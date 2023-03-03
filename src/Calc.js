@@ -75,7 +75,7 @@ export default function Calc() {
             : operation === "/"
             ? prev / curr
             : operation === "%"
-            ? prev % curr
+            ? (prev / 100) * curr
             : curr;
         setCurrentValue(computation); // sets the value to the computation variable
         setPreviousValue("0"); // erases previous value
