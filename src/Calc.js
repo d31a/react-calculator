@@ -40,7 +40,7 @@ export default function Calc() {
       case "*":
       case "%":
         setPreviousValue(currentValue);
-        setCurrentValue("0");
+        setCurrentValue("");
         setOperator(getSameValue);
         break;
       // error handling for not dividing by 0
@@ -50,7 +50,7 @@ export default function Calc() {
           break;
         }
         setPreviousValue(currentValue);
-        setCurrentValue("0");
+        setCurrentValue("");
         setOperator(getSameValue);
         break;
 
@@ -78,7 +78,7 @@ export default function Calc() {
             ? (prev / 100) * curr
             : curr;
         setCurrentValue(computation); // sets the value to the computation variable
-        setPreviousValue("0"); // erases previous value
+        setPreviousValue(""); // erases previous value
         setOperator(null); // erases the value of operator used
 
         break;
@@ -105,7 +105,11 @@ export default function Calc() {
   return (
     <div className="App">
       {/*This outputs the value to a paragraph*/}
-      <p id="resultScreen">{currentValue}</p>
+      <p id="resultScreen">
+        {previousValue}
+        {operation}
+        {currentValue}
+      </p>
       <div className="calcBtns" id="firstRow">
         <button value="clearAll" onClick={handleClick}>
           AC
