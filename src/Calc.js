@@ -5,7 +5,7 @@ export default function Calc() {
   // Create and store button value using hooks first holds the state, second is the dispatch which retrieves data
   // Keeps track of curent value and previous value that a user enters
   const [currentValue, setCurrentValue] = useState("0");
-  const [previousValue, setPreviousValue] = useState("0");
+  const [previousValue, setPreviousValue] = useState(null);
 
   // Keeps track of the operation
   const [operation, setOperator] = useState(null);
